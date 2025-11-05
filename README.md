@@ -1,1 +1,1 @@
-this file will content the decrypt messege
+Himmelfarb High School is a religious Zionist boys' high school located in the Bayit VeGan neighbourhood of Jerusalem. It was founded in 1920 as Mizral¸¥i High School and moved to its current campus in 1968. The school is named after American philanthropist Paul Himmelfarb.
