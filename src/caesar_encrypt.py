@@ -1,4 +1,3 @@
-# main.py
 def caesar_encrypt(text, shift):
     result = ""
     char = ''
@@ -12,8 +11,16 @@ def caesar_encrypt(text, shift):
         result += char
     return result
 
+def decrypt_caesar():
+    with open("secret", "r") as f:
+        text_to_decrypt = f.read()
+        for shift in range(27):
+            print("shift: ", shift, ":", caesar_encrypt(text_to_decrypt, shift), "\n\n")
+        shift = int(input("Enter the shift you want to use for decripting: "))
+        print(caesar_encrypt(text_to_decrypt, shift))
+
+def main():
+    decrypt_caesar()
+
 if __name__ == "__main__":
-    original_text = "hello world"
-    encrypted_text = caesar_encrypt(original_text, 3)
-    print(f"Original: {original_text}")
-    print(f"Encrypted: {encrypted_text}") # Expected: "khoor zruog"
+    main()
